@@ -1,0 +1,148 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho Fixo */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #1f4e79;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        /* Layout Principal */
+        .container {
+            display: flex;
+            margin-top: 90px;
+        }
+
+        /* Menu Sticky */
+        aside {
+            width: 220px;
+            background-color: #ddd;
+            padding: 20px;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            margin-bottom: 15px;
+        }
+
+        aside a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Conteúdo */
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .conteudo {
+            background: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #999;
+        }
+
+        .conteudo h2 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .conteudo p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .citacao {
+            font-style: italic;
+            border-left: 4px solid #1f4e79;
+            padding-left: 10px;
+            color: #555;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            width: 250px;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            color: #1f4e79;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1f4e79;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 600px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+                position: relative;
+                top: 0;
+            }
+
+            .conteudo {
+                width: 100%;
+            }
+        }
+
+
